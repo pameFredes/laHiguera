@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --grey: #a6a6a6;
+    --light-brown: #d99f6c;
+    --brown: #865230;
+    --black: #1f1e1e;
+    --sm: 14px;
+    --md: 18px;
+    --lg: 24px;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* ----------------------------------INDEX/HEADER------------------------------------------ */
+.body-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "img img img"
+    ". since ."
+    "story story story"
+    ". reviews ."
+    "container-card container-card container-card"
+    ". years ."
+    "medals medals medals"
+    ". title-location ."
+    "maps maps maps"
+    "footer footer footer"
+    ;
+}
+.header{
+    grid-area: header;
+    height: 60px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    height: auto;
+    align-self: center;
+    padding: 8px;
+    margin-top: 4px;
+}
+.nav-menu{
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    padding: 8px;
+}
+.nav-menu li a{
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.4rem;
+}   
+/* ----------------------------------MAIN/IMG------------------------------------------ */
+.img{
+    grid-area: img;
+    position: relative;
+    background-image: url("../multimedia/pic/pizza-cuadrada-rucula.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-bottom: 10px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img{
+    width: 250px;
+}
+/* ----------------------------------MAIN/DIVISIÓN STORY----------------------------------- */
+.since{
+    grid-area: since;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    background-color: var(--black);
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    margin-top: -26px;
+    z-index: 9;
+}
+.story{
+    grid-area: story;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+}
+.story p{
+    width: 100%;
+    font-size: 1.6rem;
+}
+.container-story-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+.container-story{
+    padding: 28px;
+    border-radius: 24px;
+    box-shadow: 0px 6px 9px rgba(89, 73, 30, 0.16);
+    border: none;
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.story h5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 200%;
+    font-family: sans-serif;
+    margin-bottom: 12px;
+}
+.img-story{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    padding: 40px;
+}
+.img-story img{
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+/* ----------------------------------MAIN/DIVISIÓN RESEÑAS------------------------------- */
+.reviews{
+    grid-area: reviews;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    background-color: var(--black);
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: -26px;
+    z-index: 9;
+}
+.container-card{
+    grid-area: container-card;
+    width: 100%;
+    height: 400px;
+    border-bottom: 10px solid var(--black);
+    border-top: 10px solid var(--black);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px;      
+}
+.card-1 .card-2 .card-3 img{
+    width: 20%;
+    height: auto;
+}
+
+.card-5{
+    grid-area: card-5;
+}
+.card-6{
+    grid-area: card-6;
+}
+/* ----------------------------------MAIN/DIVISIÓN TRAYECTORIA----------------------------- */
+.years{
+    grid-area: years;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    background-color: var(--black);
+    height: 40px;
+    width: 400px;
+    padding: 8px;
+    margin-top: -26px;
+    z-index: 9;
+}
+.container-medals{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.medals-1{
+    width: 24%;
+    height: auto;
+} 
+.medals-2{
+    width: 24%;
+    height: auto;   
+} 
+.medals-3 {
+    width: 24%;
+    height: auto;
+}
+ 
+.medals{
+    grid-area: medals;
+    display: flex;
+    justify-content: center;
+}
+/* ----------------------------------MAIN/DIVISIÓN UBICACIÓN------------------------------ */
+.title-location{
+    grid-area: title-location;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    background-color: var(--black);
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: -25px;
+    margin-top: -20px;
+    z-index: 9;
+}
+.maps {
+    grid-area: maps;
+    width: 100%;
+    height: 400px;
+    border-top: 10px solid var(--black);
+}
+.gps{
+    width: 100%;
+    height: 390px;
+    filter: grayscale(1); 
+}
+/* ----------------------------------FOOTER----------------------------------- */
+.footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey);
+    border-top: 10px solid var(--black);
+}
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.logo_footer{
+    width: 200px;
+    height: auto;
+    
+}
+.contact{
+    color: var(--black);
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    padding: 30px;
+}
+.contact h4{
+    color: var(--black);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 12px;
+}
+.contact ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.connect{
+    color: var(--black);
+    padding: 30px;
+    
+}
+.connect h4{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 12px;
+}
+.connect p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12px;
+}
+.connect a img{
+    width: 30px;
+}
+
+.connect ul{
+    display: flex;
+    justify-content: center;
+    padding: 8px;  
+}
+.connect ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+.connect ul li a{
+    width: 200px;
+    height: 200px;
+    color: var(--black);
+}
+.jobs{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+}
+.jobs h4{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.jobs button{
+    background-color: var(--black);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 4px 0;   
+}
+.jobs button a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+.copywrite{
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+/* ------------------------------------------CARTA--------------------------------------- */
+
+.body-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.main-menu{
+    
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+
+}
+.title.menu{
+    text-align: center;
+
+}
+.galery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galery img{
+    width: 400px;
+    height: auto;
+}
+.title-menu{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    padding: 32px;
+}
+.subtitle-menu{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.8rem;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.parrafo-menu{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.link-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.link-menu img{
+    width: 400px;
+    align-self: center;
+}
+.button-menu{
+    background-color: var(--black);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 380px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+.button-menu a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* -----------------------------------------NOSOTROS------------------------------ */
+.body-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.main-nosotros{
+    
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.main-nosotros h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.4rem;
+}
+.reviews-nosotros{
+    width: 100%;  
+}
+/* ---------------------------------------------RESERVAS---------------------------------------------- */
+.body-reservas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.main-reservas{
+    grid-area: main;
+    background: linear-gradient(to bottom, var(--white), var(--grey)) ;
+    height: 500px;
+    margin-top: 40px;
+}
+footer{
+    grid-area: footer;
+}
+.hour{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+.title-reservas{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+    
+   
+}
+.button-reservas{
+    justify-self: center;
+}
+.container-reservas{
+    display: flex;
+    flex-direction: column;
+}
+/* -----------------------------------------RRHH/FORMULARIO------------------------------ */
+.jobs-rrhh{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, var(--white), var(--grey)) ;
+}
+.jobs-title{
+    font-size: 2.2rem;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.jobs_parrafo{
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+.form{
+    width: 380px;
+    height: auto;
+}
+.form label{
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: rgba(128, 128, 128, 0.192);
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    height: 30px;
+    font-size: var(--sm);
+    padding: 16px;
+    margin: 12px 0;
+    width: 100%;
+    cursor: pointer;
+}
+fieldset{
+    font-size: 1.4rem;
+    margin-bottom: 10px 0;
+    padding: 20px;
+}
+.input-cv{
+    padding-bottom: 40px;
+    font-size: 1.4rem;
+}
+.legend{
+    font-size: 1.4rem;
+}
+.mensaje{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.192);
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    height: auto;
+    font-size: var(--sm);
+    padding: 16px;
+    margin: 12px 0;
+    font-family: 'Lato'
+}
+.input_submit{
+    background-color: var(--black);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 380px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+/* ----------------------------------MEDIA SCREEN MOBILE------------------------------- */
+
+@media screen and (max-width: 480px){
+    .body-index{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "img"
+    "since"
+    "story"
+    "reviews"
+    "container-card"
+    "years"
+    "medals"
+    "title-location"
+    "maps"
+    "footer"
+    ;
+        }
+        .header{
+            flex-direction: column;
+            height: auto;
+        }
+        .logo{
+            width: 100px;
+        }
+        .nav-menu{
+            align-items: center;
+            gap: 4px;
+            margin: 20px 0;
+        }
+        .since{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;  
+        }
+        .story{
+            flex-direction: column;
+            height: auto;
+        }
+        .container-story-text{
+            width: 90%;
+            height: auto;
+            padding: 24px;
+        }
+    
+        .img-story img{
+            width: 100%;
+        }
+        
+        .container-card{
+            flex-direction: column;
+            width: 400px;
+            height: auto;
+            gap: 10px;
+            margin-left: 32px;
+            border-bottom: none
+        }
+        .medals{
+            align-items: center;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+          
+        .container-footer{
+            flex-direction: column;
+            align-items: center;
+        }
+        .reviews{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        }
+        .years{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        } 
+        .title-location{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        } 
+        .jobs button{
+            margin-bottom: 12px;
+        } 
+    }
+
+
