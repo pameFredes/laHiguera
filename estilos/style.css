@@ -61,6 +61,12 @@ body{
     list-style: none;
     padding: 8px;
 }
+.nav-menu li a:hover{
+    transform: scale(1);
+    background-color: var(--grey)
+    
+
+}
 .nav-menu li a{
     color: var(--white);
     text-decoration: none;
@@ -83,6 +89,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.img:hover{
+    transition: all 2s;
+    height: 450px;
+}
+
 .logo-container img{
     width: 250px;
 }
@@ -123,6 +134,22 @@ body{
     width: 50%;
     height: auto;
 }
+.link-nosotros{
+    text-decoration: none;
+    color: var(--black);
+}
+.secondary-button{
+    text-decoration: none;
+    color: var(--black);
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px 0px rgba(89, 73, 30, 0.16);
+
+}
+
+
 .container-story{
     padding: 28px;
     border-radius: 24px;
@@ -150,6 +177,7 @@ body{
     justify-content: end;
     align-content: center;
     padding: 40px;
+    
 }
 .img-story img{
     width: 400px;
@@ -376,7 +404,7 @@ header{
     grid-area: header;
 }
 .main-menu{
-    
+    background: linear-gradient(to bottom, var(--white), var(--grey)) ;
     grid-area: main;
 }
 footer{
@@ -385,6 +413,7 @@ footer{
 }
 .title.menu{
     text-align: center;
+    background: ;
 
 }
 .galery{
@@ -396,6 +425,12 @@ footer{
 .galery img{
     width: 400px;
     height: auto;
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+.grid-picture:hover{
+    filter: none;
+    transform: scale(1.1);
 }
 .title-menu{
     text-align: center;
@@ -417,6 +452,7 @@ footer{
     font-size: 2rem;
     font-family: sans-serif;
     padding-bottom: 20px;
+    margin-top: 20px;
 }
 .link-menu{
     display: flex;
@@ -438,12 +474,16 @@ footer{
     font-size: var(--md);
     font-weight: bold;
     padding: 10px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     align-self: center;
 }
 .button-menu a{
     text-decoration: none;
     color: var(--white);
+}
+.button-menu:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 /* -----------------------------------------NOSOTROS------------------------------ */
