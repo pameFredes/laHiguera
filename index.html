@@ -1,146 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="pizzería, cafetería, restaurant, comida, café, cerveza">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="pizzería, cafetería, restaurant, comida, café, cerveza"
+    />
     <title>La Higuera-Pizzería y Cafetería-</title>
-    <link rel="shorcut icon" href="multimedia/icons-logos/logo.ico" type="image/x-ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">   
-</head>
-<body class="body-index">
-    <header class="header">   
-        <figure class="logo">
-            <a href="index.html">
-                <img src="./multimedia/icons-logos/logo_white.svg" alt="logo" class="logo"> 
-            </a>
-        </figure>                       
-        <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="index.html" alt="page">INICIO</a></li>
-                    <li><a href="./pages/carta.html" alt="menu">CARTA</a></li>
-                    <li><a href="pages/nosotros.html" alt="us">NOSOTROS</a></li>
-                    <li><a href="pages/reservas.html" alt="bookings">RESERVAS</a></li>
-                    <li><a href="pages/rrhh.html" alt="human resources">RRHH</a></li>
-                </ul>
-        </nav>    
-    </header>
-    
-    <!-- <main> -->
-        <div class="img">
-            <div class="logo-container">
-                <img src="./multimedia/icons-logos/logo_white.svg" alt="">
-            </div>
+    <link
+      rel="shorcut icon"
+      href="multimedia/icons-logos/logo.ico"
+      type="image/x-ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid">
+    <header class="header row">
+      <nav class="navbar container-fluid navbar-expand-lg navbar-light" id="nav-bar-container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./multimedia/icons-logos/logo_white.svg"
+              alt="logo"
+              class="logo-header"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="nav-bar"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2 px-3">
+                <a class="nav-link" href="index.html" alt="page">INICIO</a>
+              </li>
+              <li class="nav-item mx-2 px-3">
+                <a class="nav-link" href="./pages/carta.html" alt="menu"
+                  >CARTA</a
+                >
+              </li>
+              <li class="nav-item mx-2 px-3">
+                <a class="nav-link" href="pages/nosotros.html" alt="us"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item mx-2 px-3">
+                <a class="nav-link" href="pages/reservas.html" alt="bookings"
+                  >RESERVAS</a
+                >
+              </li>
+              <li class="nav-item mx-2 px-3">
+                <a class="nav-link" href="pages/rrhh.html" alt="human resources"
+                  >RRHH</a
+                >
+              </li>
+            </ul>
         </div>
-                
-        <section class="since">
-            <span class="span">- SINCE 1.999 -</span>
-            
-        </section>
-        <section class="story">
-            <div class="container-story-text">
-                <div class="container-story">
-                    <h5>SOBRE NOSOTROS</h5>
-                    <P>Somos una pizzería de tradición familiar, con más de 20 años de trayectoria.
-                    <p>Desde hace un tiempo, ampliamos el horario de atención, incorporando así la cafetería.</p> 
-                    <p>Elegido por miles de mendocinos y turistas, no sólo por conservar la calidad en nuestros platos, sino también por las vistas increíbles hacia viñedos y nuestra magnífica Cordillera de los Andes...</p>
-                    <button class="secondary-button"><a href="./pages/nosotros.html" class="link-nosotros">VER MÁS</a></button>
-                </div>
-                
-            </div>
-                
-                <figure class="img-story">
-                    <img src="./multimedia/pic/local-blancoynegro.jpeg" alt="">
-                </figure>
-        </section>
-        
-        
-        <section class="reviews">
-            <span>RESEÑAS</span>
-        </section>
-        
-        <article class="container-card">
-                <img src="./multimedia/recursos/card-1.png" alt="" class="card-1">
-                
-                <img src="./multimedia/recursos/card-2.png" alt="" class="card-2">
-                
-                <img src="./multimedia/recursos/card-3.png" alt="" class="card-3">
-                                        
-        </article>
+      </nav>
 
-        <section class="years">
-            <span>MÁS DE 20 AÑOS DE TRAYECTORIA</span>
-        </section>
-        <figure class="medals">
-            
-                <img src="./multimedia/recursos/medalla-1.svg" alt="" class="medals-1">
-            
-                <img src="./multimedia/recursos/medalla-2.svg" alt="" class="medals-2" >
-            
-                <img src="./multimedia/recursos/medalla-3.svg" alt="" class="medals-3">
+    </header>
+
+    <main class="main-index row">
+      <div class="img col-12">
+        <div class="logo-container">
+          <img src="./multimedia/icons-logos/logo_white.svg" alt="pizza" />
+        </div>
+      </div>
+
+      <section class="since">
+        <span class="span">- SINCE 1.999 -</span>
+      </section>
+      <section class="story">
+        <div class="container-story-text col-12">
+          <div class="container-story">
+            <h5>SOBRE NOSOTROS</h5>
+            <p>
+              Somos una pizzería de tradición familiar, con más de 20 años de
+              trayectoria.
+            </p>
+            <p>
+              Desde hace un tiempo, ampliamos el horario de atención,
+              incorporando así la cafetería.
+            </p>
+            <p>
+              Elegido por miles de mendocinos y turistas, no sólo por conservar
+              la calidad en nuestros platos, sino también por las vistas
+              increíbles hacia viñedos y nuestra magnífica Cordillera de los
+              Andes...
+            </p>
+            <button class="secondary-button">
+              <a href="./pages/nosotros.html" class="link-nosotros">VER MÁS</a>
+            </button>
+          </div>
+        </div>
+
+        <figure class="img-story">
+          <img src="./multimedia/pic/local-blancoynegro.jpeg" alt="imagen patio local" />
         </figure>
+      </section>
 
-        <section class="title-location">
-            <span>NUESTRA UBICACIÓN</span>
-        </section>
-        <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3344.841045479149!2d-68.89767000000002!3d-33.034318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98e93570c935dc69!2sLa%20Higuera!5e0!3m2!1sen!2sus!4v1646945148234!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="gps"></iframe>
-        </section> 
-    <!-- </main> -->
-        <footer class="footer">
-            <div class="container-footer">
-                <figure class="logo_footer">
-                    <a href="index.html">
-                        <img src="./multimedia/icons-logos/logo.png" alt="logo" class="logo_footer"> 
-                    </a>
-                </figure>
-                <div class="contact">
-                        <h4>Contactanos</h4>
-                        <ul>
-                            <li>lahigueramdz@gmail.com</li>
-                            <li>+54-2612512073</li>
-                            <li>Saenz Peña y Chile s/n Luján de Cuyo, Mendoza. Argentina</li>
-                        </ul>
-                </div>
-                <div class="connect">
-                    <h4 class="redes_title">Nuestras redes sociales</h4>
-                    <p class="redes_parrafo">¡Seguinos!</p>
+      <section class="reviews">
+        <span>RESEÑAS</span>
+      </section>
 
-                    <ul class="redes_ul">
-                        <li>
-                            <a href="https://www.facebook.com/lahigueraok" target="_blank" class="logo_facebook">
-                                <img src="./multimedia/icons-logos/logo-face.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/lahigueraok" target="_blank" class="logo_instagram">
-                                <img src="./multimedia/icons-logos/logo-ig.png" alt="instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://api.whatsapp.com/send?phone=+542612512073" target="_blank" class="logo_whatsapp">
-                                <img src="./multimedia/icons-logos/logo-wapp.png" alt="whats app">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="jobs">
-                    <h4> ¿Querés unirte a nuestro equipo?</h4>
-                    <button><a href="pages/rrhh.html" alt="human resources">¡POSTULATE!</a></button>
+      <article class="container-card">
+          
+            <img src="./multimedia/recursos/card-1.png" alt="reseña cliente" class="card-1" />
 
-                </div>
-            </div>
-                <div class="copywrite">
-                    <p>© 2022 By Pamela Fredes</p>
-                </div> 
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-</body>
+            <img src="./multimedia/recursos/card-2.png" alt="reseña cliente" class="card-2" />
 
+            <img src="./multimedia/recursos/card-3.png" alt="reseña cliente" class="card-3" />
+      
+      </article>
+
+      <section class="years">
+        <span>MÁS DE 20 AÑOS DE TRAYECTORIA</span>
+      </section>
+      <figure class="medals">
+        <img
+          src="./multimedia/recursos/medalla-1.svg"
+          alt=""
+          class="medals-1"
+        />
+
+        <img
+          src="./multimedia/recursos/medalla-2.svg"
+          alt=""
+          class="medals-2"
+        />
+
+        <img
+          src="./multimedia/recursos/medalla-3.svg"
+          alt=""
+          class="medals-3"
+        />
+      </figure>
+
+      <section class="title-location">
+        <span>NUESTRA UBICACIÓN</span>
+      </section>
+      <section class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3344.841045479149!2d-68.89767000000002!3d-33.034318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x98e93570c935dc69!2sLa%20Higuera!5e0!3m2!1sen!2sus!4v1646945148234!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="gps"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-footer">
+        <figure class="logo_footer">
+          <a href="index.html">
+            <img
+              src="./multimedia/icons-logos/logo.png"
+              alt="logo"
+              class="logo_footer"
+            />
+          </a>
+        </figure>
+        <div class="contact">
+          <h4>Contactanos</h4>
+          <ul>
+            <li>lahigueramdz@gmail.com</li>
+            <li>+54-2612512073</li>
+            <li>Saenz Peña y Chile s/n Luján de Cuyo, Mendoza. Argentina</li>
+          </ul>
+        </div>
+        <div class="connect">
+          <h4 class="redes_title">Nuestras redes sociales</h4>
+          <p class="redes_parrafo">¡Seguinos!</p>
+
+          <ul class="redes_ul">
+            <li>
+              <a
+                href="https://www.facebook.com/lahigueraok"
+                target="_blank"
+                class="logo_facebook"
+              >
+                <img
+                  src="./multimedia/icons-logos/logo-face.png"
+                  alt="facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/lahigueraok"
+                target="_blank"
+                class="logo_instagram"
+              >
+                <img
+                  src="./multimedia/icons-logos/logo-ig.png"
+                  alt="instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=+542612512073"
+                target="_blank"
+                class="logo_whatsapp"
+              >
+                <img
+                  src="./multimedia/icons-logos/logo-wapp.png"
+                  alt="whats app"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="jobs">
+          <h4>¿Querés unirte a nuestro equipo?</h4>
+          <button>
+            <a href="pages/rrhh.html" alt="human resources">¡POSTULATE!</a>
+          </button>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>© 2022 By Pamela Fredes</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
