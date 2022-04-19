@@ -1,0 +1,480 @@
+@import "variables";
+@import "carta";
+@import "nosotros";
+@import "reservas";
+@import "rrhh";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sm: 14px;
+    --md: 18px;
+    --lg: 24px;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* ----------------------------------INDEX/HEADER------------------------------------------ */
+.body-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "img img img"
+    ". since ."
+    "story story story"
+    ". reviews ."
+    "container-card container-card container-card"
+    ". years ."
+    "medals medals medals"
+    ". title-location ."
+    "maps maps maps"
+    "footer footer footer"
+    ;
+}
+.header{
+    grid-area: header;
+    height: 60px;
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    height: auto;
+    align-self: center;
+    padding: 8px;
+    margin-top: 4px;
+}
+.nav-menu{
+    display: flex;
+    li{
+        list-style: none;
+        padding: 8px;
+    }
+    li a{
+        color: $colorPrimario;
+        text-decoration: none;
+        border: 1px solid $colorPrimario;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 1.4rem;
+        &:hover{
+            transform: scale(1);
+            background-color: var(--grey)}
+    }   
+}
+    
+/* ----------------------------------MAIN/IMG------------------------------------------ */
+.img{
+    grid-area: img;
+    position: relative;
+    background-image: url("../multimedia/pic/pizza-cuadrada-rucula.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    border-bottom: 10px solid $colorSecundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        transition: all 2s;
+        height: 450px;
+    }
+}
+
+.logo-container img{
+    width: 250px;
+}
+/* ----------------------------------MAIN/DIVISIÓN STORY----------------------------------- */
+.since{
+    grid-area: since;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: $colorPrimario;
+    font-size: 1.8rem;
+    background-color: $colorSecundario;
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    margin-top: -26px;
+    z-index: 9;
+}
+.story{
+    grid-area: story;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    p{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    h5{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 200%;
+        font-family: sans-serif;
+        margin-bottom: 12px;
+    }
+}
+ 
+.container-story-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+.link-nosotros{
+    text-decoration: none;
+    color: $colorSecundario;
+}
+.secondary-button{
+    text-decoration: none;
+    color: $colorSecundario;
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px 0px rgba(89, 73, 30, 0.16);
+}
+
+.container-story{
+    padding: 28px;
+    border-radius: 24px;
+    box-shadow: 0px 6px 9px rgba(89, 73, 30, 0.16);
+    border: none;
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.img-story{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    padding: 40px;
+    img{
+        width: 400px;
+        height: auto;
+        border-radius: 20px;
+    }   
+}
+/* ----------------------------------MAIN/DIVISIÓN RESEÑAS------------------------------- */
+.reviews{
+    grid-area: reviews;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: $colorPrimario;
+    font-size: 1.8rem;
+    background-color: $colorSecundario;
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: -26px;
+    z-index: 9;
+}
+.container-card{
+    grid-area: container-card;
+    width: 100%;
+    height: 400px;
+    border-bottom: 10px solid $colorSecundario;
+    border-top: 10px solid $colorSecundario;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px;      
+}
+.card-1 .card-2 .card-3 img{
+    width: 20%;
+    height: auto;
+}
+.card-5{
+    grid-area: card-5;
+}
+.card-6{
+    grid-area: card-6;
+}
+/* ----------------------------------MAIN/DIVISIÓN TRAYECTORIA----------------------------- */
+.years{
+    grid-area: years;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: $colorPrimario;
+    font-size: 1.8rem;
+    background-color: $colorSecundario;
+    height: 40px;
+    width: 400px;
+    padding: 8px;
+    margin-top: -26px;
+    z-index: 9;
+}
+.container-medals{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.medals-1{
+    width: 24%;
+    height: auto;
+} 
+.medals-2{
+    width: 24%;
+    height: auto;   
+} 
+.medals-3 {
+    width: 24%;
+    height: auto;
+}
+ 
+.medals{
+    grid-area: medals;
+    display: flex;
+    justify-content: center;
+}
+/* ----------------------------------MAIN/DIVISIÓN UBICACIÓN------------------------------ */
+.title-location{
+    grid-area: title-location;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    color: $colorPrimario;
+    font-size: 1.8rem;
+    background-color: $colorSecundario;
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: -25px;
+    margin-top: -20px;
+    z-index: 9;
+}
+.maps {
+    grid-area: maps;
+    width: 100%;
+    height: 400px;
+    border-top: 10px solid $colorSecundario;
+}
+.gps{
+    width: 100%;
+    height: 390px;
+    filter: grayscale(1); 
+}
+/* ----------------------------------FOOTER----------------------------------- */
+.footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background-color: $colorTerciario;
+    border-top: 10px solid $colorTerciario;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.logo_footer{
+    width: 200px;
+    height: auto;
+}
+.contact{
+    color: $colorSecundario;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    padding: 30px;
+    h4{
+        color: $colorSecundario;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 12px;
+    }
+    ul li{
+        list-style: none;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+.connect{
+    color: $colorSecundario;
+    padding: 30px;
+    h4{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 12px;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 12px;
+    }
+    a img{
+        width: 30px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        padding: 8px;  
+    }
+    ul li{
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+    }
+    ul li a{
+        width: 200px;
+        height: 200px;
+        color: $colorSecundario;
+    }
+    
+}
+.jobs{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    h4{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    button{
+        background-color: $colorSecundario;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 4px 0;   
+    }
+    button a{
+        text-decoration: none;
+        color: $colorPrimario;
+        font-weight: bold;
+    }
+}
+
+.copywrite{
+    text-align: center;
+    background-color: $colorSecundario;
+    color: $colorPrimario;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+/* ----------------------------------MEDIA SCREEN MOBILE------------------------------- */
+@media screen and (max-width: 480px){
+    .body-index{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "img"
+    "since"
+    "story"
+    "reviews"
+    "container-card"
+    "years"
+    "medals"
+    "title-location"
+    "maps"
+    "footer"
+    ;
+        }
+        .header{
+            flex-direction: column;
+            height: auto;
+        }
+        .logo{
+            width: 100px;
+        }
+        .nav-menu{
+            align-items: center;
+            gap: 4px;
+            margin: 20px 0;
+        }
+        .since{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;  
+        }
+        .story{
+            flex-direction: column;
+            height: auto;
+        }
+        .container-story-text{
+            width: 90%;
+            height: auto;
+            padding: 24px;
+        }
+    
+        .img-story img{
+            width: 100%;
+        }
+        .container-card{
+            flex-direction: column;
+            width: 400px;
+            height: auto;
+            gap: 10px;
+            margin-left: 32px;
+            border-bottom: none
+        }
+        .medals{
+            align-items: center;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .container-footer{
+            flex-direction: column;
+            align-items: center;
+        }
+        .reviews{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        }
+        .years{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        } 
+        .title-location{
+            width: 100%;
+            justify-self: auto;
+            font-size: 1.3rem;
+        } 
+        .jobs button{
+            margin-bottom: 12px;
+        } 
+    }
+
+
+
+
+
+
+
+
+
+

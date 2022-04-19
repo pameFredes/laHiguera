@@ -1,0 +1,74 @@
+/* -----------------------------------------RRHH/FORMULARIO------------------------------ */
+.jobs-rrhh{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, $colorPrimario, $colorTerciario) ;
+}
+.jobs-title{
+    font-size: 2.2rem;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.jobs_parrafo{
+    font-size: 1.6rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: $colorTerciario;
+}
+.form{
+    width: 380px;
+    height: auto;
+    label{
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+}
+.input{
+    background-color: rgba(128, 128, 128, 0.192);
+    border: 1px solid $colorTerciario;
+    border-radius: 10px;
+    height: 30px;
+    font-size: var(--sm);
+    padding: 16px;
+    margin: 12px 0;
+    width: 100%;
+    cursor: pointer;
+}
+fieldset{
+    font-size: 1.4rem;
+    margin-bottom: 10px 0;
+    padding: 20px;
+}
+.input-cv{
+    padding-bottom: 40px;
+    font-size: 1.4rem;
+}
+.legend{
+    font-size: 1.4rem;
+}
+.mensaje{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.192);
+    border: 1px solid $colorTerciario;
+    border-radius: 10px;
+    height: auto;
+    font-size: var(--sm);
+    padding: 16px;
+    margin: 12px 0;
+    font-family: 'Lato'
+}
+.input_submit{
+    background-color: $colorSecundario;
+    border-radius: 8px;
+    border: none;
+    color: $colorPrimario;
+    width: 380px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px;
+}

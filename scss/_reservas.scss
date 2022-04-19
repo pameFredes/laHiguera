@@ -1,0 +1,41 @@
+/* ---------------------------------------------RESERVAS---------------------------------------------- */
+.body-reservas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+.main-reservas{
+    grid-area: main;
+    background: linear-gradient(to bottom, $colorPrimario, $colorTerciario) ;
+    height: 500px;
+    margin-top: 40px;
+}
+footer{
+    grid-area: footer;
+}
+.hour{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+.title-reservas{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.button-reservas{
+    justify-self: center;
+}
+.container-reservas{
+    display: flex;
+    flex-direction: column;
+}
