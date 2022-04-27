@@ -1,0 +1,3 @@
+SEO:
+Cambié tittle del head de cada una de las páginas.
+Agregué description y también keywords relacionadas en cada página del sitio.
