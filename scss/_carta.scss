@@ -21,13 +21,13 @@ footer{
     grid-area: footer;
 
 }
-.title.menu{
-    text-align: center;
-    font-weight: bold;
-    font-size: 3.5rem;
-    font-family: sans-serif;
-    padding: 32px;
-}
+// .title.menu{
+//     text-align: center;
+//     font-weight: 400;
+//     font-size: 2.8rem;
+//     font-family: sans-serif;
+//     padding-bottom: 20px;
+// }
 .galery{
     width: 100%;
     display: flex;
@@ -50,6 +50,7 @@ footer{
     font-size: 2.8rem;
     font-family: sans-serif;
     padding-bottom: 20px;
+    margin-top: 20px;
 }
 .parrafo-menu{
     text-align: center;

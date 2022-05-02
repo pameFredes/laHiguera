@@ -42,11 +42,7 @@ body{
 }
 .header{
     grid-area: header;
-    height: 60px;
-    background-color: $colorSecundario;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
 }
 .logo{
     width: 80px;
@@ -55,24 +51,33 @@ body{
     padding: 8px;
     margin-top: 4px;
 }
-.nav-menu{
+.navbar-nav{
     display: flex;
-    li{
-        list-style: none;
-        padding: 8px;
-    }
+    justify-content: space-evenly;
     li a{
-        color: $colorPrimario;
-        text-decoration: none;
-        border: 1px solid $colorPrimario;
-        border-radius: 8px;
-        padding: 8px;
-        font-size: 1.4rem;
-        &:hover{
-            transform: scale(1);
-            background-color: var(--grey)}
-    }   
+        padding: 6px;
+        font-size: 1.2rem;
+    }
 }
+
+// .nav-menu{
+//     display: flex;
+//     li{
+//         list-style: none;
+//         padding: 8px;
+//     }
+//     li a{
+//         color: $colorPrimario;
+//         text-decoration: none;
+//         border: 1px solid $colorPrimario;
+//         border-radius: 8px;
+//         padding: 8px;
+//         font-size: 1.4rem;
+//         &:hover{
+//             transform: scale(1);
+//             background-color: var(--grey)}
+//     }   
+// }
     
 /* ----------------------------------MAIN/IMG------------------------------------------ */
 .img{
@@ -308,6 +313,7 @@ body{
     h4{
         color: $colorSecundario;
         font-size: 1.5rem;
+        font-weight: bold;
         text-align: center;
         padding: 12px;
     }
@@ -325,6 +331,7 @@ body{
         text-align: center;
         font-size: 1.5rem;
         margin-top: 12px;
+        font-weight: bold;
     }
     p{
         font-size: 1.2rem;
@@ -363,6 +370,7 @@ body{
         text-align: center;
         font-size: 1.5rem;
         margin-bottom: 20px;
+        font-weight: bold;
     }
     button{
         background-color: $colorSecundario;
