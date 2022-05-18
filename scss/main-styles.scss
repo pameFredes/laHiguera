@@ -306,7 +306,7 @@ body{
 }
 .contact{
     color: $colorSecundario;
-    width: 200px;
+    width: 240px;
     height: 200px;
     align-self: center;
     padding: 30px;
@@ -344,13 +344,13 @@ body{
     }
     ul{
         display: flex;
-        justify-content: center;
-        padding: 8px;  
+        justify-content: center;  
     }
     ul li{
         text-decoration: none;
         list-style: none;
         padding: 20px;
+        margin-right: 10px;
     }
     ul li a{
         width: 200px;
@@ -382,6 +382,7 @@ body{
         text-decoration: none;
         color: $colorPrimario;
         font-weight: bold;
+        font-size: 1.3rem;
     }
 }
 
@@ -476,6 +477,90 @@ body{
             margin-bottom: 12px;
         } 
     }
+
+    @media screen and (max-width: 768px){
+        .body-index{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+        "header"
+        "img"
+        "since"
+        "story"
+        "reviews"
+        "container-card"
+        "years"
+        "medals"
+        "title-location"
+        "maps"
+        "footer"
+        ;
+            }
+            .header{
+                flex-direction: column;
+                height: auto;
+            }
+            .logo{
+                width: 100px;
+            }
+            .nav-menu{
+                align-items: center;
+                gap: 4px;
+                margin: 20px 0;
+            }
+            .since{
+                width: 100%;
+                justify-self: auto;
+                font-size: 1.3rem;  
+            }
+            .story{
+                flex-direction: column;
+                height: auto;
+            }
+            .container-story-text{
+                width: 90%;
+                height: auto;
+                padding: 24px;
+            }
+        
+            .img-story img{
+                width: 100%;
+            }
+            .container-card{
+                flex-direction: column;
+                width: 400px;
+                height: auto;
+                gap: 10px;
+                margin-left: 190px;
+                border-bottom: none
+            }
+            .medals{
+                align-items: center;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+            .container-footer{
+                flex-direction: column;
+                align-items: center;
+            }
+            .reviews{
+                width: 100%;
+                justify-self: auto;
+                font-size: 1.3rem;
+            }
+            .years{
+                width: 100%;
+                justify-self: auto;
+                font-size: 1.3rem;
+            } 
+            .title-location{
+                width: 100%;
+                justify-self: auto;
+                font-size: 1.3rem;
+            } 
+            .jobs button{
+                margin-bottom: 12px;
+            } 
+        }
 
 
 
